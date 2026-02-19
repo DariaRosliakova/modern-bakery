@@ -1,0 +1,89 @@
+:root {
+  /* --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif; */
+
+  --main-txt-cl: #31261a;
+  --secondary-txt-cl: #faf4ea;
+  --accent-light-cl: #819b57;
+
+  --accent-dark-cl: #465929;
+}
+body {
+  /* font-family: var(--main-font); */
+  color: var(--main-txt-cl);
+}
+/* BASE */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+img {
+  display: block;
+}
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* HEADER */
+
+.header-btn {
+  width: 238px;
+  height: 59px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--secondary-txt-cl);
+  background: var(--accent-light-cl);
+  border: 2px solid var(--accent-light-cl);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.header-btn:hover,
+.header-btn:focus {
+  background: transparent;
+  color: var(--accent-dark-cl);
+}
+.nav-link {
+  color: var(--secondary-txt-cl);
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-light-cl);
+}
+
+/* HERO */
+
+.hero-title {
+  color: var(--secondary-txt-cl);
+}
+.hero-title .accent {
+  color: var(--accent-light-cl);
+}
+
+/* ADVANTAGES */
+
+.advantages-list {
+  color: var(--secondary-txt-cl);
+  background-color: var(--accent-light-cl);
+}
+
+/* TRADITIONS */
+
+.section-title {
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 84px;
+}
