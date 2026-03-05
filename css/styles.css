@@ -8,7 +8,9 @@
   --light-brand-cl: #cfcfbc;
   --secondary-dark-cl: #a28268;
 }
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 body {
@@ -29,6 +31,9 @@ h5,
 h6,
 p {
   margin: 0;
+}
+a {
+  display: inline-block; /* щоб посилання не було ширше ніж треба  */
 }
 img {
   display: block;
@@ -157,9 +162,7 @@ img {
   justify-content: space-between;
   gap: 40px;
 }
-.traditions-content {
-  min-width: 710px;
-}
+
 .section-title {
   font-weight: 900;
   font-size: 64px;
@@ -191,6 +194,18 @@ img {
 .dark-accent {
   color: var(--accent-dark-cl);
 }
+.chefs-list {
+  display: flex;
+  gap: 40px 30px;
+  flex-wrap: wrap; /* якщо будуть додані ще шефи, щоб йшли на інший рядок*/
+}
+.chefs-item {
+  flex-basis: calc((100% - 30px) / 2);
+}
+.chef-card {
+  display: flex;
+  gap: 16px;
+}
 .chefs-name {
   font-weight: 600;
   font-size: 40px;
@@ -202,12 +217,20 @@ img {
     -16px 16px 0 0 var(--secondary-txt-cl),
     -16px 16px 0 1px var(--secondary-dark-cl);
 }
+.chef-text p:not(:last-child) {
+  margin-bottom: 24px;
+}
 
 /* FORMATS */
 
 .formats-title {
   margin-bottom: 80px;
   text-align: center;
+}
+.formats-container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
 }
 .formats-list {
   display: flex;
@@ -241,20 +264,73 @@ img {
   font-weight: 300;
 }
 
+/* CAROUSEL */
+
+.carousel-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0; /* щоб стрілочки не стискались, коли їх витісняє розмір карток */
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+  fill: var(--main-txt-cl);
+  border-radius: 50%;
+  border: 1px solid var(--main-txt-cl);
+}
+
+.carousel-btn:hover,
+.carousel-btn:focus {
+  background-color: var(--main-txt-cl);
+  fill: var(--secondary-txt-cl);
+}
+
 /* JOIN */
 
+.join-section {
+  padding-bottom: 96px;
+}
+.join-container {
+  display: flex;
+  gap: 32px;
+}
 .join-title {
   margin-bottom: 16px;
 }
-.join-descr {
+.join-text {
   color: var(--accent-dark-cl);
   margin-bottom: 42px;
+}
+.join-map {
+  flex-shrink: 0;
+  border: none;
+  border-radius: 16px;
 }
 .policy {
   font-size: 12px;
 }
 
 /* FOOTER */
+
+.footer {
+  padding: 32px 0;
+  background-image: url(../images/footer/footer-bg.png);
+  background-color: var(--main-txt-cl);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+.footer-nav,
+.footer-address {
+  display: flex;
+  flex-basis: 50%;
+  gap: 20px;
+}
 
 .address-link {
   font-style: normal;
@@ -267,6 +343,13 @@ img {
 .address-link:focus {
   color: var(--accent-light-cl);
 }
+.address-icon {
+  fill: var(--secondary-txt-cl);
+}
+.address-icon:hover,
+.address-icon:focus {
+  fill: var(--accent-light-cl);
+}
 .policy-link {
   font-weight: 300;
   font-size: 16px;
@@ -275,19 +358,22 @@ img {
   font-size: 14px;
   color: #a18268;
 }
-.footer {
-  background-image: url(../images/footer/footer-bg.png);
-  background-color: var(--main-txt-cl);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+
+.footer-logo,
+.footer-nav-list {
+  flex-grow: 1;
 }
+
 .footer-nav-link {
   color: var(--secondary-txt-cl);
 }
 .footer-nav-link:hover,
 .footer-nav-link:focus {
   color: var(--accent-light-cl);
+}
+.address-list,
+.address-info {
+  flex-grow: 1;
 }
 .policy-link {
   font-weight: 300;
