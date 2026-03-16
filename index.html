@@ -8,7 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./scss/main.css" />
   </head>
   <body>
     <header class="header">
@@ -44,7 +44,7 @@
               </li>
             </ul>
           </nav>
-          <button class="order-btn modal-btn-open" type="button">
+          <button class="btn modal-btn-open" type="button">
             Замовити дзвінок
           </button>
         </div>
@@ -86,6 +86,7 @@
               </p>
             </div>
             <img
+              class="traditions-image"
               src="./images/traditions/baker-man.jpg"
               alt="Чоловік пекар дивиться з посмішкою на батони"
             />
@@ -158,6 +159,11 @@
             <ul class="formats-list list">
               <li class="formats-item">
                 <article class="format-card">
+                  <img
+                    class="format-image"
+                    src="./images/formats/walrus-format.jpg"
+                    alt="Інтер'єр пекарні Walrus з просторим залом та барною стійкою"
+                  />
                   <h3 class="bakery-title" lang="en">Walrus</h3>
                   <div class="bakery-descr">
                     <p>Площа: до 120 м2</p>
@@ -172,6 +178,11 @@
               </li>
               <li class="formats-item">
                 <article class="format-card">
+                  <img
+                    class="format-image"
+                    src="./images/formats/horseshoe-format.jpg"
+                    alt="Інтер'єр пекарні Horseshoe з вітриною та меню на стіні"
+                  />
                   <h3 class="bakery-title" lang="en">Horseshoe</h3>
                   <div class="bakery-descr">
                     <p>Площа: до 25 м2</p>
@@ -183,11 +194,19 @@
               </li>
               <li class="formats-item">
                 <article class="format-card">
+                  <img
+                    class="format-image"
+                    src="./images/formats/handlebar-format.jpg"
+                    alt="Інтер'єр пекарні Handlebar з випічкою на прилавку"
+                  />
                   <h3 class="bakery-title" lang="en">Handlebar</h3>
                   <div class="bakery-descr">
                     <p>Площа: до 15 м2</p>
                     <p>Меню: найпопулярніші позиції меню</p>
-                    <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
+                    <p>
+                      Штат: 1 продавець, 1 пекар, 1 помічник <br />
+                      пекаря
+                    </p>
                     <p>Посадкові місця: відсутні</p>
                   </div>
                 </article>

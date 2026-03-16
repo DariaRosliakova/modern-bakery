@@ -1,0 +1,27 @@
+.chefs-title {
+  position: relative;
+  margin: 0 auto 80px auto;
+  text-align: center;
+}
+.chefs-title::before,
+.chefs-title::after {
+  position: absolute;
+  bottom: 24px;
+  content: '';
+  width: 352px;
+  border: 2px solid var(--light-brand-cl);
+}
+.chefs-title::after {
+  right: 0;
+}
+.chefs-title::before {
+  left: 0;
+}
+.chefs-list {
+  display: flex;
+  gap: 40px 30px;
+  flex-wrap: wrap; /* якщо будуть додані ще шефи, щоб йшли на інший рядок*/
+}
+.chefs-item {
+  flex-basis: calc((100% - 30px) / 2);
+}
