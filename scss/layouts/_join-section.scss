@@ -1,26 +1,32 @@
 .join-section {
   padding-bottom: 96px;
-}
-.join-container {
-  display: flex;
-  gap: 32px;
-}
-.join-title {
-  margin-bottom: 16px;
-}
-.join-text {
-  color: var(--accent-dark-cl);
-  margin-bottom: 42px;
-}
-.join-form-field {
-  position: relative;
-  margin-bottom: 24px;
-}
-.join-btn {
-  margin: 0 auto 16px;
-}
-.join-map {
-  flex-shrink: 0;
-  border: none;
-  border-radius: 16px;
+
+  &__container {
+    display: flex;
+    gap: 32px;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    color: var(--accent-dark-cl);
+    margin-bottom: 42px;
+  }
+
+  &__form-field {
+    position: relative;
+    margin-bottom: 24px;
+  }
+
+  &__btn {
+    margin: 0 auto 16px;
+  }
+  
+  &__map {
+    flex-shrink: 0;
+    border: none;
+    border-radius: 16px;
+  }
 }

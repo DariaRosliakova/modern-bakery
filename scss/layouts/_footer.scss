@@ -72,14 +72,6 @@
   flex-grow: 1;
 }
 
-.footer-nav-link {
-  color: var(--secondary-txt-cl);
-  transition: color 0.3s;
-}
-.footer-nav-link:hover,
-.footer-nav-link:focus {
-  color: var(--accent-light-cl);
-}
 .address-list,
 .address-info {
   flex-grow: 1;

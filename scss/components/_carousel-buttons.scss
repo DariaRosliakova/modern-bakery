@@ -10,15 +10,18 @@
   fill: var(--main-txt-cl);
   border-radius: 50%;
   border: 1px solid var(--main-txt-cl);
+  cursor: pointer;
   transition:
     background-color 0.3s,
     fill 0.3s;
-}
-.carousel-btn:hover,
-.carousel-btn:focus {
-  background-color: var(--main-txt-cl);
-  fill: var(--secondary-txt-cl);
-}
-.carousel-btn.next {
-  transform: rotate(180deg);
+
+  &:hover,
+  &:focus {
+    background-color: var(--main-txt-cl);
+    fill: var(--secondary-txt-cl);
+  }
+
+  &.next {
+    transform: rotate(180deg);
+  }
 }

@@ -24,12 +24,3 @@
   flex-grow: 1;
   justify-content: center;
 }
-.header-nav-link {
-  color: var(--secondary-txt-cl);
-  text-align: center;
-  transition: color 0.3s;
-}
-.header-nav-link:hover,
-.header-nav-link:focus {
-  color: var(--accent-light-cl);
-}
