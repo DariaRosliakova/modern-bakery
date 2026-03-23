@@ -11,9 +11,13 @@ body {
   font-family: var(--main-font);
   color: var(--main-txt-cl);
   background-color: var(--secondary-txt-cl);
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 300;
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 18px;
+    font-weight: 400;
+  }
 }
 
 h1,

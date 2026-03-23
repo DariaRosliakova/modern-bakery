@@ -1,17 +1,37 @@
 .advantages-section {
-  padding: 16px 0;
-  background-color: var(--accent-light-cl);
+  padding: 40px 0 20px 0;
+  @media screen and (min-width: $bp-tablet) {
+    background-color: var(--accent-light-cl);
+    padding: 0;
+  }
 
   &__list {
     display: flex;
-    justify-content: space-between;
-    gap: 40px;
+    flex-direction: column;
+    gap: 16px;
+    background-color: var(--light-brand-cl);
+    border-radius: 24px;
+    padding: 24px 40px;
     font-weight: 300;
-    font-size: 20px;
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      gap: 40px;
+      font-size: 20px;
+
+      background-color: transparent;
+      border-radius: 0;
+      padding: 16px;
+    }
   }
 
   &__item {
-    color: var(--secondary-txt-cl);
-    font-style: 20px;
+    font-size: 14px;
+    @media screen and (min-width: $bp-tablet) {
+      color: var(--secondary-txt-cl);
+      font-size: 20px;
+      font-weight: 300;
+    }
   }
 }

@@ -3,24 +3,63 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding-top: 32px;
-}
-.header-container {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  /* gap щоб при зменшенні екрану не прилипало лого і кнопка до навігації */
-}
-.header-nav {
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-  gap: 40px;
-}
+  padding-top: 16px;
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 32px;
+  }
 
-.header-nav-list {
-  display: flex;
-  gap: 64px;
-  flex-grow: 1;
-  justify-content: center;
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    /* gap щоб при зменшенні екрану не прилипало лого і кнопка до навігації */
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 40px;
+  }
+
+  &__logo {
+    img {
+      width: 72px;
+      height: 30px;
+      @media screen and (min-width: $bp-tablet) {
+        width: 107px;
+        height: 45px;
+      }
+    }
+  }
+
+  &__menu {
+    display: none;
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      gap: 64px;
+      flex-grow: 1;
+      justify-content: flex-end;
+    }
+    @media screen and (min-width: $bp-desktop) {
+      justify-content: center;
+    }
+  }
+  &__button {
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
+  }
+  &__burger {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    fill: var(--secondary-txt-cl);
+    @media screen and (min-width: $bp-tablet) {
+      display: none;
+    }
+  }
 }

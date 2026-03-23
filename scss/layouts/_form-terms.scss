@@ -1,8 +1,13 @@
 .form-terms {
+  display: none;
   font-size: 12px;
   text-align: center;
   margin: 0 auto;
   max-width: 238px;
+
+  @media screen and (min-width: $bp-tablet) {
+    display: block;
+  }
 
   &__link {
     color: var(--main-txt-cl);
