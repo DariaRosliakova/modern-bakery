@@ -1,7 +1,7 @@
 .footer {
   position: relative;
   padding: 32px 0;
-  background-image: url(../../images/footer/footer-bg.png);
+  background-image: url('../images/footer/footer-bg.png');
   background-color: var(--main-txt-cl);
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,7 +9,7 @@
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../../images/footer/footer-bg@2x.png);
+    background-image: url('../images/footer/footer-bg@2x.png');
   }
 
   &::before,
@@ -25,12 +25,12 @@
     height: 205px;
     top: 50px;
     left: 0;
-    background-image: url(../../images/footer/bread-1-small-version.png);
+    background-image: url('../images/footer/bread-1-small-version.png');
 
     @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../../images/footer/bread-1-small-version@2x.png);
+      background-image: url('../images/footer/bread-1-small-version@2x.png');
       background-size: 85px 205px;
     }
 
@@ -39,12 +39,12 @@
       height: 120px;
       top: auto;
       left: auto;
-      background-image: url(../../images/footer/bread-1.png);
+      background-image: url('../images/footer/bread-1.png');
 
       @media screen and (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        background-image: url(../../images/footer/bread-1@2x.png);
+        background-image: url('../images/footer/bread-1@2x.png');
         background-size: 180px 120px;
       }
     }
@@ -54,12 +54,12 @@
     width: 100px;
     height: 90px;
     right: 0;
-    background-image: url(../../images/footer/bread-2-small-version.png);
+    background-image: url('../images/footer/bread-2-small-version.png');
 
     @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../../images/footer/bread-2-small-version@2x.png);
+      background-image: url('../images/footer/bread-2-small-version@2x.png');
       background-size: 100px 90px;
     }
 
@@ -67,11 +67,11 @@
       width: 380px;
       height: 190px;
       right: 0;
-      background-image: url(../../images/footer/bread-2.png);
+      background-image: url('../images/footer/bread-2.png');
       @media screen and (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        background-image: url(../../images/footer/bread-2@2x.png);
+        background-image: url('../images/footer/bread-2@2x.png');
         background-size: 380px 190px;
       }
     }
