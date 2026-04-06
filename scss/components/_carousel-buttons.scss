@@ -15,8 +15,7 @@
     background-color 0.3s,
     fill 0.3s;
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: var(--main-txt-cl);
     fill: var(--secondary-txt-cl);
   }
